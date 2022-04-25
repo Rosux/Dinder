@@ -1,0 +1,9 @@
+.register-content-wrapper{
+    padding: 50px 0;
+}
+.form-row-button > input{
+    margin-top: 10px;
+}
+.form-row-image-wrapper{
+    width: 100%;
+}

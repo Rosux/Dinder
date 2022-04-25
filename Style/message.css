@@ -1,0 +1,23 @@
+.message-menu{
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 20;
+    justify-content: center;
+    display: none;
+}
+.message-wrapper{
+    width: fit-content;
+    height: fit-content;
+    margin-top: calc(10vh + 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.register-form{
+    margin-top: 0;
+}

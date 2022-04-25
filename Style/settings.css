@@ -1,0 +1,25 @@
+form{
+    margin-bottom: 50px;
+}
+.register-content-wrapper{
+    padding: 50px 0;
+}
+.form-row > textarea{
+    resize: vertical;
+}
+@media only screen and (max-width: 1280px) {
+    .form-row-image-wrapper{
+        width: 80%;
+    }
+    .form-row-image{
+        width: calc(100% / 3);
+    }
+}
+@media only screen and (max-width: 600px) {
+    .form-row-image-wrapper{
+        width: 100%;
+    }
+    .form-row-image{
+        width: calc(100% / 2);
+    }
+}

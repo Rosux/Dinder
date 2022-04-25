@@ -1,0 +1,299 @@
+.profile-wrapper{
+    width: 100%;
+    height: fit-content;
+    min-height: calc(100vh - 60px);
+    margin-top: 60px;
+    padding: 0 0 50px 0;
+}
+.profile-banner{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.profile-banner-image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../Images/section1dog.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.profile-banner-user{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profile-banner-tags{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: 20px;
+}
+.profile-banner-tags > a{
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: var(--pink);
+    font-size: 1em;
+    color: var(--white);
+    box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.27);
+}
+.profile-banner-wrapper{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.profile-user-image{
+    position: relative;
+    min-width: 150px;
+    min-height: 150px;
+    aspect-ratio: 1 / 1;
+    max-height: 200px;
+    max-width: 200px;
+    object-fit: cover;
+    object-position: center center;
+    margin-right: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+.profile-banner-user-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: fit-content;
+}
+.profile-name, .profile-description{
+    text-align: left;
+    color: white;
+}
+.profile-name{
+    font-size: 3em;
+}
+.profile-description{
+    font-size: 1.4em;
+    margin-top: 0.5em;
+    max-width: 50vw;
+}
+.profile-gallery{
+    margin: 20px 0;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.profile-gallery-error{
+    width: 60%;
+    text-align: center;
+    font-size: 2em;
+}
+.gallery-wrapper{
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.gallery-image{
+    width: calc(100% / 4);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    filter: brightness(75%);
+    transition: .4s;
+}
+.gallery-image:hover{
+    filter: brightness(100%);
+    cursor: pointer;
+}
+.gallery-image-upload{
+    background-color: rgba(182, 182, 182, 0.4);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(100%);
+}
+.gallery-image-upload > div{
+    height: 50%;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13em;
+    background-image: url("../Images/cross.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gallery-image-upload:hover{
+    filter: brightness(75%);
+}
+.gallery-image-upload > p{
+    font-size: 13em;
+    user-select: none;
+}
+/* image view */
+#view-image{
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 20;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+#view-image-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+#view-image-image{
+    cursor: default;
+    max-width: 100%;
+    max-height: 100%;
+}
+/* titles */
+.profile-title{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-title > p{
+    width: fit-content;
+    padding: 10px 50px;
+    background-color: var(--pink);
+    color: var(--white);
+    border-radius: 500px;
+    font-size: 2em;
+}
+/* dog section */
+.dog-section{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dog-wrapper{
+    margin: 20px 0;
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.dog-card{
+    width: calc(100% / 3 - 50px);
+    height: fit-content;
+    box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.27);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+.dog-card-image{
+    width: 90%;
+    aspect-ratio: 1/1;
+    margin-top: 5%;
+}
+.dog-card-image > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.dog-card-name, .dog-card-desc, .dog-card-age, .dog-card-race{
+    width: 90%;
+    margin-top: 10px;
+}
+.dog-card-name > p, .dog-card-desc > p, .dog-card-age > p, .dog-card-race > p{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+}
+.dog-card-name > p{
+    font-size: 2em;
+}
+.dog-card-race > p{
+    font-size: 1em;
+}
+.dog-card-age > p{
+    font-size: 1em;
+}
+.dog-card-desc > p{
+    font-size: 1em;
+}
+/* mobile */
+@media only screen and (max-width: 1200px) {
+    .dog-wrapper, .gallery-wrapper{
+        width: 90%;
+    }
+    .gallery-image{
+        width: calc(100% / 3);
+    }
+    .dog-card{
+        width: calc(100% / 2 - 50px);
+    }
+}
+@media only screen and (max-width: 600px) {
+    .profile-banner-user{
+        flex-direction: column;
+    }
+    .profile-description{
+        max-width: fit-content;
+    }
+    .profile-banner-wrapper{
+        flex-direction: column;
+    }
+    .gallery-wrapper, .dog-wrapper{
+        width: 90%;
+    }
+    .gallery-image{
+        width: calc(100% / 2);
+    }
+    .dog-card{
+        width: calc(100% / 1 - 50px);
+    }
+}

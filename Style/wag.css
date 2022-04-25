@@ -1,0 +1,37 @@
+.profile-banner-image{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.wag-swipe-button{
+    width: 100px;
+    aspect-ratio: 1/1;
+    background-color: var(--pink);
+    border-radius: 50px;
+    margin: 0 70px;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wag-swipe-button > button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.wag-swipe-button > button > i{
+    width: fit-content;
+    height: fit-content;
+    font-size: 5em;
+    color: white;
+}
+.profile-banner-form{
+    width: 100%;
+    height: 100%;
+}

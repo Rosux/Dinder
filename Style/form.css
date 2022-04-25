@@ -1,0 +1,220 @@
+.register-content-wrapper{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightpink);
+}
+.register-form{
+    box-shadow: -15px 15px 25px rgba(0, 0, 0, 0.27);
+    width: fit-content;
+    min-width: 25%;
+    padding: 50px;
+    background-color: var(--pink);
+    border-radius: 50px;
+    color: var(--white);
+    margin-top: var(--headerheight);
+}
+.register-title{
+    text-align: center;
+    font-size: 2.4em;
+    color: var(--white);
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: solid 2px white;
+}
+.register-links{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0 0 0;
+}
+.register-links > a{
+    margin: 0 10px;
+    width: calc(100%/3);
+    text-align: center;
+}
+.register-form > form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.form-error{
+    width: 100%;
+    padding-bottom: 20px;
+}
+.form-error > p{
+    padding: 5px 10px;
+    width: calc(100% - 20px);
+    font-size: 1em;
+}
+.form-row{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+.register-form-tip{
+    width: 50%;
+    margin-left: 50%;
+    font-size: 0.8em;
+    text-align: left;
+    color: var(--white);
+    margin-bottom: 5px;
+}
+.form-row > p{
+    width: calc(50% - 10px);
+    text-align: right;
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+.form-row > input, .form-row > textarea{
+    font-size: 1.3em;
+    width: calc(50% - 12px);
+    padding: 0;
+    padding: 3px 5px;
+    margin: 0;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.file-upload{
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: none !important;
+    outline-width: 0 !important;
+}
+.form-row-checkboxline > p > input, .form-row-checkboxline > p > textarea{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.form-row-checkboxline > p{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+.form-row-checkboxline > p > a{
+    text-decoration: underline;
+}
+.form-row-button{
+    margin-top: 10px;
+}
+.form-row-button > input, .form-row-button > textarea{
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+.submit-button > input{
+    width: fit-content;
+    padding: 10px 50px;
+    border-radius: 50px;
+    background-color: var(--white);
+    cursor: pointer;
+    font-size: 1.3em;
+    border: none;
+    color: var(--pink);
+    transition: .3s ease-in-out;
+    box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.27);
+}
+.submit-button > input:hover{
+    background-color: var(--lightpink);
+    transform: translate(-50%, -5px);
+}
+.submit-button > input:not(:hover){
+    transform: translate(-50%, 0px);
+}
+.form-row-image-wrapper{
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.form-row-image, .form-row-image-edit{
+    width: calc(100% / 4);
+    aspect-ratio: 1/1;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.form-row-image:hover::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    background-image: url("../Images/open-trash-can.png");
+    background-position: center;
+    background-size: cover;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+.form-row-image-edit:hover::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    background-image: url("../Images/edit.png");
+    background-position: center;
+    background-size: cover;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+/* register form mobile */
+@media only screen and (max-width: 1280px) {
+    .register-form{
+        width: 70%;
+    }
+    .register-title{
+        font-size: 2em;
+    }
+    .register-form-tip{
+        width: 100%;
+        margin-left: 0;
+    }
+    .form-row{
+        font-size: 0.8em;
+    }
+    .form-row > p{
+        width: calc(100% - 10px);
+        text-align: left;
+    }
+    .form-row > input, .form-row > textarea{
+        width: calc(100% - 12px);
+    }
+    .form-row-checkboxline{
+        font-size: 0.6em;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .profile-name > p{
+        text-align: center;
+    }
+    .profile-description > p{
+        text-align: center;
+    }
+}

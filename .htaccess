@@ -1,0 +1,21 @@
+# Deny from all
+# RewriteRule ^php/.*\.(php|html)$ - [F,L,NC]
+# RewriteRule ^Script/.*\.(php|html)$ - [F,L,NC]
+# RewriteRule ^Images/.*\.(php|html)$ - [F,L,NC]
+# RewriteRule ^Templates/.*\.(php|html)$ - [F,L,NC]
+
+# directory browsing
+# Options All -Indexes
+# ErrorDocument 403 /forbidden.html
+# ErrorDocument 404 /error.html
+# ErrorDocument 500 /servererror.html
+
+#<Files .htaccess>
+#Order allow,deny
+#Deny from all
+#</Files>
+
+#RewriteEngine On
+#Options All -Indexes
+#RewriteRule (^|/)Images(/|$) - [F]
+# directory browsing
